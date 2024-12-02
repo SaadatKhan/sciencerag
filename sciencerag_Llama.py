@@ -25,7 +25,7 @@ from requests.exceptions import RequestException, ConnectionError
 
 # Set your OpenAI API key
 client = OpenAI(
-    api_key=''  # Replace with your actual key
+    api_key='# Replace with your actual key'  
 )
 
 
@@ -272,7 +272,7 @@ def process_pdfs_and_store_in_chroma(directory, wikipedia_content, chroma_persis
     Returns:
         Chroma: The initialized vector store.
     """
-    embeddings = OpenAIEmbeddings(openai_api_key="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")
+    embeddings = OpenAIEmbeddings(openai_api_key="Your apu key here")
     vector_store = Chroma(persist_directory=chroma_persist_dir, embedding_function=embeddings)
 
     for file_name in os.listdir(directory):
@@ -344,7 +344,7 @@ def retrieve_relevant_content(query, vector_store, top_k=50,deduplicate=False):
 
 
 client = OpenAI(
-  api_key="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"  # Replace with your actual key
+  api_key="Your API key here"  # Replace with your actual key
   # this is also the default, it can be omitted
 )
 
@@ -613,7 +613,7 @@ def main():
         )
         model_path = "meta-llama/Meta-Llama-3.1-8B-Instruct"
         cache_dir = "./cache"
-        token = ""  # Replace with your Hugging Face token
+        token = "# Replace with your Hugging Face token"  
 
         tokenizer, model, device, generation_kwargs = initialize_llama(model_path, cache_dir, token)
 
