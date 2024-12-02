@@ -1,0 +1,18 @@
+# General-purpose libraries
+requests==2.31.0
+PyPDF2==3.0.1
+colorama==0.4.6
+torch==2.0.1
+transformers==4.34.0
+accelerate==0.22.0
+openai==0.27.8
+
+# LangChain and related community extensions
+langchain==0.113.0
+langchain-community==0.1.5
+
+# NLP-related libraries
+nltk==3.9.1
+
+# Utility libraries
+shutil-which==2.0
