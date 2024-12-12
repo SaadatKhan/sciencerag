@@ -17,3 +17,11 @@
 
 Disclaimer: You will have to put your api keys wherever appropriate.
 
+## Results
+
+| Evaluation Aspect | Result |
+|------------------|--------|
+| Query Rewriting (Cosine Similarity) | 0.82 |
+| Information Accuracy | 74% |
+| Response Correctness | 4 out of 5 (Average over 50 queries) |
+
